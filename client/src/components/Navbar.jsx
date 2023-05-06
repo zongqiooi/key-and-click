@@ -3,8 +3,9 @@ import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
-// Style components
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })}
@@ -13,8 +14,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   ${mobile({ padding: "10px 0px" })}
 `;
 
@@ -36,7 +37,6 @@ const SearchContainer = styled.div`
   align-items: center;
   margin-left: 25px;
   padding: 5px;
-  ${mobile({ marginLeft: "10px" })}
 `;
 
 const Input = styled.input`
@@ -46,21 +46,19 @@ const Input = styled.input`
 
 const Center = styled.div`
   flex: 1;
-  ${mobile({ flex: "5" })}
+  text-align: center;
 `;
 
 const Logo = styled.h1`
   font-weight: bold;
-  text-align: center;
-  ${mobile({ fontSize: "22px", display: "flex", justifyContent: "flex-end" })}
+  ${mobile({ fontSize: "24px" })}
 `;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  ${mobile({ flex: "5", justifyContent: "center", marginRight: "10px" })}
+  ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 
 const MenuItem = styled.div`
@@ -71,27 +69,31 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
+  const quantity = useSelector((state) => state.cart.quantity);
+
   return (
     <Container>
       <Wrapper>
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input placeholder="Search"></Input>
-            <Search style={{ color: "grey", fontSize: 16 }}></Search>
+            <Input placeholder="Search" />
+            <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
         </Left>
         <Center>
           <Logo>Key & Click.</Logo>
         </Center>
         <Right>
-          <MenuItem>Register</MenuItem>
-          <MenuItem>Login</MenuItem>
-          <MenuItem>
-            <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined></ShoppingCartOutlined>
-            </Badge>
-          </MenuItem>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SIGN IN</MenuItem>
+          <Link to="/cart">
+            <MenuItem>
+              <Badge badgeContent={quantity} color="primary">
+                <ShoppingCartOutlined />
+              </Badge>
+            </MenuItem>
+          </Link>
         </Right>
       </Wrapper>
     </Container>
