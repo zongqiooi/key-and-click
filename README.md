@@ -1,10 +1,17 @@
 # Key & Click 
 Full stack web application 
+
 # Tech Stack Used
-- MERN 
-- Redux 
-- Stripe 
-- JWT 
+- NextJS 
+- ReactJS 
+- MongoDB 
+- Stripe
+
+
+<!-- - MERN  -->
+<!-- - Redux  -->
+<!-- - Stripe  -->
+<!-- - JWT  -->
 
 <!---
 # Widget Tree
