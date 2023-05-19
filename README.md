@@ -2,8 +2,8 @@
 Full stack web application 
 
 # Tech Stack Used
-- NextJS 
-- ReactJS 
+- Next.js
+- React.js 
 - MongoDB 
 - Stripe
 
