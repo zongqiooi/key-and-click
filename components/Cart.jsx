@@ -7,7 +7,7 @@ import {
   AiOutlineShopping,
 } from "react-icons/ai";
 import { TiDeleteOutline } from "react-icons/ti";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useStateContext } from "@/context/StateContext";
 import getStripe from "@/lib/getStripe";
 
