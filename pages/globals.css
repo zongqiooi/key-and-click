@@ -1111,3 +1111,36 @@ span.text-red {
     width: 200px;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .hero-banner-container {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    align-items: center;
+  }
+  .hero-banner-container .beats-solo {
+    position: relative;
+    top: 125px;
+  }
+  .hero-title h3 {
+    position: relative;
+    top: 125px;
+  }
+  .hero-button {
+    position: relative;
+    top: -50px;
+  }
+  .hero-banner-image {
+    width: 55%;
+    height: 35%;
+    top: 5%;
+    right: 23%;
+  }
+  .right button {
+    position: absolute;
+    /* right: -150px; */
+    left: 750px;
+    margin-left: -25px;
+  }
+}
