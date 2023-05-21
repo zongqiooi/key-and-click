@@ -1,28 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Product, HeroBanner, FooterBanner, Layout } from "@/components";
-// import dbConnect from "@/lib/dbConnect";
-// import clientPromise from "@/lib/mongodb";
-
-// import connectMongo from "@/util/connectMongo";
-// import Item from "@/models/Item";
-
-// import axios from "axios";
-// import mongoose from "mongoose";
-// import { products } from "./data";
-// import clientPromise from "@/lib/mongo";
-// import clientPromise from ".";
-
 import { getProducts } from "@/lib/mongo/items";
-
-// async function fetchProducts() {
-//   const { products } = await getProducts();
-//   if (!products) throw new Error("Failed to fetch products!");
-
-//   console.log("wthhhackeck why is there another bug");
-//   console.log(products);
-
-//   return products;
-// }
 
 const Home = ({ products }) => {
   return (
@@ -45,34 +23,12 @@ const Home = ({ products }) => {
 };
 
 export const getServerSideProps = async () => {
-  // let products;
-
   const { products } = await getProducts();
   if (!products) throw new Error("Failed to fetch products!");
 
   return {
-    // props: { products },
     props: { products: JSON.parse(JSON.stringify(products)) },
   };
-
-  // try {
-  //   console.log("Connecting to mongo...");
-  //   await connectMongo();
-  //   console.log("Connected to mongo!");
-
-  //   console.log("Fetching documents!");
-  //   const products = await Item.find({});
-  //   // const item = await Item.find({}); // try this too later
-  //   console.log("Fetched documents!");
-
-  //   return {
-  //     props: { products },
-  //     // props: { products: JSON.parse(JSON.stringify(products)) },
-  //   };
-  // } catch (error) {
-  //   console.log(error);
-  //   return { notFound: true };
-  // }
 };
 
 export default Home;
