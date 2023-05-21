@@ -196,7 +196,6 @@ span.text-red {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 16px;
-  /* color: black; */
   align-self: flex-end;
 }
 .products-heading {
@@ -256,8 +255,6 @@ span.text-red {
 }
 .footer-banner-image {
   position: absolute;
-  /* top: -35%;
-  left: 8%; */
   width: 35%;
   top: 5%;
   left: 28%;
@@ -638,17 +635,12 @@ span.text-red {
     left: 8px;
   }
   .hero-banner-image {
-    /* width: 77%;
-    height: 62%;
-    top: -2%;
-    right: -6%; */
     width: 40%;
     height: 70%;
     top: 15%;
     right: 10%;
   }
   .footer-banner-container {
-    /* height: 360px; */
     height: 33vh;
     margin-top: 80px;
   }
