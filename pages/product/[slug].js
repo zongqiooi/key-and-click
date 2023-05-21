@@ -11,8 +11,9 @@ import {
 import { Product } from "@/components";
 import { useStateContext } from "@/context/StateContext";
 import Image from "next/image";
+import { getProducts } from "@/lib/mongo/items";
 
-const ProductDetails = () => {
+const ProductDetails = ({ products }) => {
   const router = useRouter();
   const { slug } = router.query;
 
@@ -118,6 +119,15 @@ const ProductDetails = () => {
       </Layout>
     </div>
   );
+};
+
+export const getServerSideProps = async () => {
+  const { products } = await getProducts();
+  if (!products) throw new Error("Failed to fetch products!");
+
+  return {
+    props: { products: JSON.parse(JSON.stringify(products)) },
+  };
 };
 
 export default ProductDetails;
