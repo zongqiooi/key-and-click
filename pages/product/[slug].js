@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Footer, Layout, Navbar } from "@/components";
-import { products } from "../data";
+import { Layout } from "@/components";
 import { useRouter } from "next/router";
 import {
   AiOutlineMinus,
@@ -10,7 +9,6 @@ import {
   AiOutlineStar,
 } from "react-icons/ai";
 import { Product } from "@/components";
-import toast, { Toaster } from "react-hot-toast";
 import { useStateContext } from "@/context/StateContext";
 import Image from "next/image";
 
