@@ -47,6 +47,8 @@ const ProductDetails = () => {
             <div className="image-container">
               <Image
                 src={currProduct.image && currProduct.image[index]}
+                width={100}
+                height={100}
                 className="product-detail-image"
                 alt="product image"
               />
@@ -55,6 +57,8 @@ const ProductDetails = () => {
               {currProduct.image?.map((item, i) => (
                 <Image
                   key={i}
+                  width={100}
+                  height={100}
                   src={item}
                   alt="product image in different views"
                   className={
