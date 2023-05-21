@@ -2,7 +2,7 @@
 ![Hero-section](https://github.com/zongqiooi/key-and-click/assets/95561298/a5922d0f-6e2a-4df6-a7eb-988d7ec4f733)
 
 # Key & Click.
-Key & Click. is an e-commerce full-stack web application that sells the best keyboard and mice in the market 🚀
+Key & Click is an e-commerce full-stack web application that sells the best keyboard and mice in the market 🚀
 
 # Visit the Website!
 https://key-and-click.vercel.app/
