@@ -12,6 +12,14 @@ Key & Click. is an ecommerce full stack web application that sells the best keyb
 - Stripe API
 - Vercel
 
+# Payment Testing
+
+To test the payment in Stripe, the following details can be entered:
+
+1. Card number: 4242 4242 4242 4242
+2. MM/YY: 04/24
+3. CVC: 424
+
 # Home Page (Hero, Product, and Footer Sections)
 
 # Product Page (Proudct Info and Product Recommendations Sections)
