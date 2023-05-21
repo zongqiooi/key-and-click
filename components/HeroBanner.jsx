@@ -13,6 +13,7 @@ const HeroBanner = () => {
           src="https://resource.logitechg.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/g413-firebird/g413-gallery-1-nb.png?v=1"
           width={450}
           height={450}
+          quality={100}
           alt="keyboard"
           className="hero-banner-image"
         />

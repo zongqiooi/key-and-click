@@ -49,6 +49,7 @@ const ProductDetails = ({ products }) => {
                 width={100}
                 height={100}
                 className="product-detail-image"
+                quality={100}
                 alt="product image"
               />
             </div>
@@ -59,6 +60,7 @@ const ProductDetails = ({ products }) => {
                   width={100}
                   height={100}
                   src={item}
+                  quality={100}
                   alt="product image in different views"
                   className={
                     i === index ? "small-image selected-image" : "small-image"

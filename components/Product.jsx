@@ -12,6 +12,7 @@ const Product = ({ product: { image, name, price, slug, details } }) => {
               src={image[0]}
               width={300}
               height={250}
+              quality={100}
               alt="product"
               className="product-image"
             />

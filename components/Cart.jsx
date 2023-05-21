@@ -77,6 +77,7 @@ const Cart = () => {
                   src={item?.image[0]}
                   width={180}
                   height={150}
+                  quality={100}
                   alt="product images in cart"
                   className="cart-product-image"
                 />
