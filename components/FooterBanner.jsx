@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const FooterBanner = () => {
   return (
@@ -20,7 +19,7 @@ const FooterBanner = () => {
             <button type="button">Shop Now</button>
           </Link>
         </div>
-        <Image
+        <img
           src="https://resource.logitechg.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/hyjal-g502-hero/g502-hero-gallery-1-nb.png?v=1"
           alt="mouse"
           className="footer-banner-image"
