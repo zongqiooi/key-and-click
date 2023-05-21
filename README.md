@@ -38,9 +38,15 @@ To test the payment in Stripe, the following details can be entered:
 ![success_payment](https://github.com/zongqiooi/key-and-click/assets/95561298/45ef72fb-edfc-4597-900b-3636f303f5af)
 
 # How to Run the Project 
+1. Clone the project into local machine 
 `git clone https://github.com/zongqiooi/key-and-click.git` 
+2. Change directory into project folder 
 `cd key-and-click`
+3. Open the current directory in VS Code 
+`code .` 
+4. Install all the project dependencies 
 `npm install` 
+5. Run the project with Next.js 
 `npm run dev`
 
 # Image Credits
