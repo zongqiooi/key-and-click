@@ -12,6 +12,7 @@ import {
 import { Product } from "@/components";
 import toast, { Toaster } from "react-hot-toast";
 import { useStateContext } from "@/context/StateContext";
+import Image from "next/image";
 
 const ProductDetails = () => {
   const router = useRouter();
@@ -44,16 +45,18 @@ const ProductDetails = () => {
         <div className="product-detail-container">
           <div className="product-image-container">
             <div className="image-container">
-              <img
+              <Image
                 src={currProduct.image && currProduct.image[index]}
                 className="product-detail-image"
+                alt="product image"
               />
             </div>
             <div className="small-images-container">
               {currProduct.image?.map((item, i) => (
-                <img
+                <Image
                   key={i}
                   src={item}
+                  alt="product image in different views"
                   className={
                     i === index ? "small-image selected-image" : "small-image"
                   }

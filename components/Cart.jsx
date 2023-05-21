@@ -10,6 +10,7 @@ import { TiDeleteOutline } from "react-icons/ti";
 import toast from "react-hot-toast";
 import { useStateContext } from "@/context/StateContext";
 import getStripe from "@/lib/getStripe";
+import Image from "next/image";
 
 const Cart = () => {
   const cartRef = useRef();
@@ -72,7 +73,11 @@ const Cart = () => {
           {cartItems.length >= 1 &&
             cartItems.map((item) => (
               <div className="product" key={item.id}>
-                <img src={item?.image[0]} className="cart-product-image" />
+                <Image
+                  src={item?.image[0]}
+                  alt="product images in cart"
+                  className="cart-product-image"
+                />
                 <div className="item-desc">
                   <div className="flex top">
                     <h5>{item.name}</h5>
