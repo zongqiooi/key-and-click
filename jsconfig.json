@@ -1,14 +1,3 @@
-// {
-//   "compilerOptions": {
-//     "baseUrl": ".",
-//     "paths": {
-//       "@components/*": ["components/*"],
-//       "@lib/*": ["lib/*"],
-//       "@public/*": ["public/*"]
-//     }
-//   }
-// }
-// old one: working fine before adding mongo
 {
   "compilerOptions": {
     "paths": {
