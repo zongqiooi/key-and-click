@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
     <div className="layout">
       <Head>
         <title>Key & Click.</title>
+        <link rel="shortcut icon" href="/logo.ico" />
       </Head>
       <header>
         <Navbar />
