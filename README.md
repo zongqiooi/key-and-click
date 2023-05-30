@@ -22,6 +22,12 @@ To test the payment in Stripe, the following details can be entered:
 3. CVC: 424
 
 # Pages 
+- Home Page (Hero, Product, and Footer Sections)
+- Product Page (Product Info and Product Recommendations Sections
+- Cart Page
+- Stripe Payment Page
+- Successful Payment Page
+
 ## Home Page (Hero, Product, and Footer Sections)
 ![localhost_3000_ (2)](https://github.com/zongqiooi/key-and-click/assets/95561298/740f752d-7169-4a0d-9ef9-b6d7989ad648)
 ***
